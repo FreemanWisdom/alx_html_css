@@ -28,26 +28,26 @@ body {
 }
 
 header {
-  background-color: #222;
-  color: white;
+  background-color: #d36f6f;
+  color: rgb(226, 10, 10);
   padding: 10px;
 }
 
 footer {
-  background-color: #333;
-  color: #ddd;
+  background-color: #554f45;
+  color: #f0eaea;
   text-align: center;
   padding: 10px;
 }
 
 article {
   padding: 15px;
-  background: white;
+  background: rgb(191, 183, 196);
 }
 
 aside {
   padding: 15px;
-  background: #eaeaea;
+  background: #346abb;
 }
 
 .logo {
