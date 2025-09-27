@@ -1,0 +1,391 @@
+/* ========== GOOGLE FONTS ========== */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap');
+
+/* ========== GLOBAL STYLES ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', Arial, sans-serif;
+  color: #333;
+  background-color: #fff;
+  line-height: 1.6;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: #C271FF;
+  color: #fff;
+  border: none;
+  padding: 14px 40px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #a85aff;
+}
+
+/* ========== HEADER ========== */
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 80px;
+  z-index: 10;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  height: 40px;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  transition: opacity 0.3s ease;
+  font-family: 'Montserrat', sans-serif;
+}
+
+header nav ul li a:hover {
+  opacity: 0.7;
+}
+
+/* ========== HERO SECTION ========== */
+.hero {
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+              url('images/Object.png') center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  padding: 0 20px;
+}
+
+.hero-content h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.hero-tags {
+  margin-bottom: 30px;
+}
+
+.hero-tags span {
+  margin: 0 10px;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* ========== LEARN FROM THE PROS ========== */
+.learn-pros {
+  background: #071629;
+  color: #fff;
+  padding: 80px 100px;
+  text-align: center;
+}
+
+.learn-pros h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.learn-pros h2 span {
+  color: #C271FF;
+}
+
+.pros-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.pro {
+  max-width: 200px;
+  text-align: center;
+}
+
+.pro img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.pro h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.pro p {
+  font-size: 14px;
+}
+
+/* ========== TESTIMONIAL ========== */
+.testimonial {
+  background-color: #C271FF;
+  color: #fff;
+  padding: 80px 100px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.testimonial-img img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.testimonial-text blockquote {
+  font-size: 20px;
+  line-height: 1.6;
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+.testimonial-text h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+}
+
+/* ========== TUTORIALS ========== */
+.tutorials {
+  padding: 80px 100px;
+  text-align: center;
+}
+
+.tutorials h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.tutorials h2 span {
+  color: #C271FF;
+}
+
+.tutorials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+}
+
+.tutorial-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+  text-align: left;
+  padding-bottom: 15px;
+}
+
+.tutorial-thumb {
+  position: relative;
+}
+
+.tutorial-thumb img:first-child {
+  width: 100%;
+  display: block;
+}
+
+.tutorial-thumb .play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 60px;
+  transform: translate(-50%, -50%);
+  opacity: 0.9;
+}
+
+.tutorial-card h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  margin: 15px;
+}
+
+.tutorial-card p {
+  font-size: 14px;
+  margin: 0 15px 10px 15px;
+}
+
+.tutorial-author {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 15px;
+}
+
+.tutorial-author img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.tutorial-author h4 {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.tutorial-rating {
+  margin: 0 15px;
+}
+
+.tutorial-duration {
+  font-size: 12px;
+  color: #999;
+  margin: 5px 15px;
+}
+
+/* ========== MEMBERSHIP ========== */
+.membership {
+  background: #071629;
+  color: #fff;
+  padding: 80px 100px;
+  text-align: center;
+}
+
+.membership h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.membership h2 span {
+  color: #C271FF;
+}
+
+.membership-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.membership-card img {
+  width: 60px;
+  margin-bottom: 15px;
+}
+
+.membership-card h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+/* ========== FAQ ========== */
+.faq {
+  padding: 80px 100px;
+}
+
+.faq h2 {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+}
+
+.faq-item h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* ========== FOOTER ========== */
+.footer {
+  background: #071629;
+  color: #fff;
+  padding: 40px 80px 20px 80px;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between; /* logo left, icons right */
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.footer-logo {
+  height: 40px;
+}
+
+.social-icons i {
+  font-size: 20px;
+  margin-left: 15px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.social-icons i:hover {
+  opacity: 0.7;
+}
+
+.footer p {
+  text-align: center;
+  font-size: 12px;
+  margin-top: 10px;
+  opacity: 0.7;
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 768px) {
+  header {
+    padding: 20px;
+  }
+
+  .testimonial {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 36px;
+  }
+
+  .hero-tags span {
+    font-size: 14px;
+  }
+
+  .learn-pros, .membership, .faq {
+    padding: 40px 20px;
+  }
+}
